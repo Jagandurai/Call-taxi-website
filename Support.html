@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallTaxi</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header" data-header>
+        <div class="container">
+
+            <div class="overlay" data-overlay></div>
+<!-- 
+            <a href="#" class="logo">
+                <h3 class="h3 card-title">
+                    <a href="#">CallTaxi</a>
+                </h3> -->
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo1.png" alt="CallTaxi Logo" class="logo-img">
+                </a>
+
+                <nav class="navbar" data-navbar>
+                    <ul class="navbar-list">
+
+                        <li>
+                            <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+                        </li>
+
+                        <li>
+                            <a href="Partners.html" class="navbar-link" data-nav-link>Partners</a>
+                        </li>
+
+                        <li>
+                            <a href="Booking.html" class="navbar-link" data-nav-link>Booking</a>
+                        </li>
+
+                        <li>
+                            <a href="Support.html" class="navbar-link" data-nav-link>Support</a>
+                        </li>
+
+
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+
+                    <div class="header-contact">
+                        <a href="tel:9626284701" class="contact-link">Timings</a>
+
+                        <span class="contact-time">Mon - Sat: 12:00 am - 12:00 pm</span>
+                    </div>
+
+                    <a href="index.html#type-car" class="btn" aria-labelledby="aria-label-txt">
+                        <ion-icon name="car-outline"></ion-icon>
+
+                        <span id="aria-label-txt">Explore cars</span>
+                    </a>
+
+                    <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+                        <span class="one"></span>
+                        <span class="two"></span>
+                        <span class="three"></span>
+                    </button>
+
+                </div>
+
+        </div>
+    </header>
+
+<body>
+<main>
+
+    <div class="container">
+        <section class="box">
+            <div class="rows">
+                <div class="col-md-12">
+                    <div class="partners-form-heading">SEN YOUR QUERY</div>
+                    <form method="POST" class="support_form">
+                        <div class="support-group line-2">
+                            <div class="col-lg-6 col-sm-6 col-xs-6 support-relative">
+                                <input type="email" class="support-control" name="email" placeholder="Your Email Id">
+                            </div>
+                            <div class="col-lg-5 col-sm-6 col-xs-6 support-relative">
+                                <input type="number" class="support-control number-input" name="mobile"
+                                    placeholder="Your Mobile Number" required>
+                            </div>
+                        </div>
+                        <div class="support-group line-3">
+                            <div class="col-lg-6 col-sm-6 col-xs-6 support-relative">
+                                <input type="text" class="support-control" name="city" placeholder="Your City">
+                            </div>
+                            <div class="col-lg-5 col-sm-6 col-xs-6 support-relative">
+                                <select class="support-control number-input" name="action"
+                                    aria-label="Select From the List">
+                                    <option value="" disabled selected>Select From the List</option>
+                                    <option value="complaints">Complaints</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="suggestions">Suggestions</option>
+                                    <option value="enquiry">Enquiry</option>
+                                    <option value="others">Others</option>
+                                </select>
+                            </div>
+                        </div>
+                            <div class="partners-form-group row required">
+                                <div class="col-md-9 partners-form-relative">
+                                    <input type="text" class="partners-form-control" placeholder="Write Your Query" name="name" required>
+                                </div>
+                            </div>
+                        <input type="submit" name="support_data" class="btns btn-primary" value="Submit Your Query">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h3 class="h3 card-title">
+                    <a href="#"><span>CallTaxi</span></a>
+                </h3>
+                <p class="footer-text">
+                    Search for cheap rental cars in Tamilnadu. With a diverse fleet of 10,000+ vehicles, Waydex offers
+                    its
+                    consumers an attractive and fun selection.
+                </p>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <p class="footer-list-title"><span>Quick Link</span></p>
+                </li>
+                <li>
+                    <a href="index.html" class="footer-link">Home</a>
+                </li>
+                <li>
+                    <a href="Partners.html" class="footer-link">Partners</a>
+                </li>
+                <li>
+                    <a href="Booking.html" class="footer-link">Booking</a>
+                </li>
+                <li>
+                    <a href="Support.html" class="footer-link">Support</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <p class="footer-list-title"><span>Contact</span></p>
+                </li>
+                <li>
+                    <a href="tel:1234567890" class="footer-link">
+                        <i class="fas fa-phone"></i> 1234567890
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:info@calltaxi.co.in" class="footer-link">
+                        <i class="fas fa-envelope"></i> info@calltaxi.co.in
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">
+                        <i class="fas fa-map-marker-alt"></i> Tamilnadu
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <ul class="social-list">
+                <li><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+
+            <p class="copyright">
+                &copy; 2024 <a href="#">CallTaxi</a>. All Rights Reserved
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="./assets/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallTaxi</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <div class="overlay" data-overlay></div>
+
+            <!-- <a href="#" class="logo">
+                <h3 class="h3 card-title">
+                    <a href="#">CallTaxi</a>
+                </h3> -->
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo1.png" alt="CallTaxi Logo" class="logo-img">
+                </a>
+
+                <nav class="navbar" data-navbar>
+                    <ul class="navbar-list">
+
+                        <li>
+                            <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+                        </li>
+
+                        <li>
+                            <a href="Partners.html" class="navbar-link" data-nav-link>Partners</a>
+                        </li>
+
+                        <li>
+                            <a href="Booking.html" class="navbar-link" data-nav-link>Booking</a>
+                        </li>
+
+                        <li>
+                            <a href="Support.html" class="navbar-link" data-nav-link>Support</a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+
+                    <div class="header-contact">
+                        <a href="tel:9626284701" class="contact-link">Timings</a>
+
+                        <span class="contact-time">Mon - Sat: 12:00 am - 12:00 pm</span>
+                    </div>
+
+                    <a href="index.html#type-car" class="btn" aria-labelledby="aria-label-txt">
+                        <ion-icon name="car-outline"></ion-icon>
+
+                        <span id="aria-label-txt">Explore cars</span>
+                    </a>
+
+                    <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+                        <span class="one"></span>
+                        <span class="two"></span>
+                        <span class="three"></span>
+                    </button>
+
+                </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="partners-form-heading">BOOK YOUR TRAVEL</div>
+            <div class="support-group ">
+                <div class="col-lg-6 col-sm-6 col-xs-6 support-relative">
+                   <label for="name">Name </label>
+                   <input type="text" id="name" class="form-control" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-lg-5 col-sm-6 col-xs-6 support-relative">
+                    <label for="mobile">Mobile Number </label>
+                    <input type="text" id="mobile" class="form-control number-input" name="mobile" minlength="10" maxlength="10"
+                        onkeypress="return isNumberKey(event)" placeholder="Your Mobile Number" required>
+                </div>
+            </div>
+            <div class="support-group ">
+                <div class="col-lg-6 col-sm-6 col-xs-6 support-relative">
+                    <label for="service_type">Service Type </label>
+                    <select id="service_type" class="form-control" name="service_type" aria-label="Select Service Type" required>
+                        <option value="" disabled selected>Select Service Type</option>
+                        <option value="round_trip">Round Trip</option>
+                        <option value="one_way">One Way</option>
+                        <option value="rental_car">Rental Car</option>
+                    </select>
+                </div>
+                <div class="col-lg-5 col-sm-6 col-xs-6 support-relative">
+                    <label for="pickup_city">Pickup City </label>
+                    <select id="pickup_city" class="form-control" name="pickup_city" aria-label="Select Pickup City" required>
+                        <option value="" disabled selected>Select Pickup City</option>
+                        <option value="1">Coimbatore</option>
+                        <option value="9">Chennai</option>
+                        <option value="2">Erode</option>
+                        <option value="3">Madurai</option>
+                        <option value="4">Trichy</option>
+                        <option value="5">Salem</option>
+                        <option value="6">Tirupur</option>
+                        <option value="7">Dindigul</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="support-group ">
+                <div class="col-lg-6 col-sm-6 col-xs-6 support-relative">
+                    <label for="pickuptime">Pick Up Time</label>
+                    <input type="time" id="pickuptime" class="form-control" name="pickuptime" aria-label="Select Pick Up Time">
+                </div>
+                <div class="col-lg-5 col-sm-6 col-xs-6 support-relative">
+                    <label for="pickupdate">Pickup Date </label>
+                    <input onchange="load()" id="pickupdate" type="date" class="form-control" name="pickupdate"
+                        placeholder="Enter Pickup Date" required onkeydown="return false">
+                </div>
+            </div>
+            <div class="support-group ">
+                <div class="col-lg-6 col-sm-6 col-xs-6 support-relative">
+                    <label for="dropoffdate">Drop Off Time</label>
+                    <input onchange="load2()" id="dropoffdate" type="date" class="form-control" name="dropoffdate"
+                       placeholder="Enter Dropoff Date" onkeydown="return false">
+                </div>
+                <div class="col-lg-5 col-sm-6 col-xs-6 support-relative">
+                    <label for="dropofftime">Drop Off Date</label>
+                    <input type="time" id="dropofftime" class="form-control" name="dropofftime" aria-label="Drop Off Time">
+                </div>
+            </div>
+        
+            <div class="botton">
+                <input type="submit" name="partner_data" class="btns btn-danger" value="Book Now">
+            </div>
+        </div>
+
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3 class="h3 card-title">
+                        <a href="#"><span>CallTaxi</span></a>
+                    </h3>
+                    <p class="footer-text">
+                        Search for cheap rental cars in Tamilnadu. With a diverse fleet of 10,000+ vehicles, Waydex offers
+                        its
+                        consumers an attractive and fun selection.
+                    </p>
+                </div>
+    
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title"><span>Quick Link</span></p>
+                    </li>
+                    <li>
+                        <a href="index.html" class="footer-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="Partners.html" class="footer-link">Partners</a>
+                    </li>
+                    <li>
+                        <a href="Booking.html" class="footer-link">Booking</a>
+                    </li>
+                    <li>
+                        <a href="Support.html" class="footer-link">Support</a>
+                    </li>
+                </ul>
+    
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title"><span>Contact</span></p>
+                    </li>
+                    <li>
+                        <a href="tel:1234567890" class="footer-link">
+                            <i class="fas fa-phone"></i> 1234567890
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@calltaxi.co.in" class="footer-link">
+                            <i class="fas fa-envelope"></i> info@calltaxi.co.in
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">
+                            <i class="fas fa-map-marker-alt"></i> Tamilnadu
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="footer-bottom">
+                <ul class="social-list">
+                    <li><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+    
+                <p class="copyright">
+                    &copy; 2024 <a href="#">CallTaxi</a>. All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+    
+    </html>

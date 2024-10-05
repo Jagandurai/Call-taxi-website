@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CallTaxi</title>
+  <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <!-- <a href="#" class="logo">
+        <h3 class="h3 card-title">
+          <a href="#">CallTaxi</a>
+        </h3>
+      </a> -->
+      <a href="#" class="logo">
+        <img src="./assets/images/logo1.png" alt="CallTaxi Logo" class="logo-img">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="Partners.html" class="navbar-link" data-nav-link>Partners</a>
+          </li>
+
+          <li>
+            <a href="Booking.html" class="navbar-link" data-nav-link>Booking</a>
+          </li>
+
+          <li>
+            <a href="Support.html" class="navbar-link" data-nav-link>Support</a>
+          </li>
+          <li>
+
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+
+        <div class="header-contact">
+          <a href="tel:9626284701" class="contact-link">Timings</a>
+
+          <span class="contact-time">Mon - Sat: 12:00 am - 12:00 pm</span>
+        </div>
+
+        <a href="#type-car" class="btn" aria-labelledby="aria-label-txt">
+          <ion-icon name="car-outline"></ion-icon>
+
+          <span id="aria-label-txt">Explore cars</span>
+        </a>
+
+        <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+<!-- <section class="section hero" id="home">
+  <div class="hero-image">
+    <img src="./assets/images/hero-banner.jpg" alt="Banner Image">
+  </div> 
+</section> -->
+        <section class="contact-img-section">
+          <div class="contact-img">
+            <img src="./assets/images/booking.jpg" alt="Contact Banner Image">
+          </div>
+        </section>
+
+<section class="section blog" id="blog">
+  <div class="container">
+
+    <h2 class="h2 section-title">Beautiful Tourist Spots</h2>
+
+    <ul class="blog-list has-scrollbar">
+
+      <li>
+        <div class="blog-card">
+
+          <figure class="card-banner">
+
+            <a href="#">
+              <img src="./assets/images/tour1.jpg" alt="Opening of new offices of the company" loading="lazy"
+                class="w-100">
+            </a>
+
+            <a href="#" class="btn card-badge">Valpari</a>
+
+          </figure>
+
+          <div class="card-content">
+
+            <h3 class="h3 card-titles">
+              <a href="#">Valparai It is located 3,500 feet (1,100 m) above sea level on the Anaimalai Hills range of the Western Ghats, at a
+              distance of 100 kilometres (62 mi) from Coimbatore and 65 kilometres (40 mi) from Pollachi.</a>
+            </h3>
+
+            <div class="card-meta">
+
+              <div class="publish-date">
+                <ion-icon name="time-outline"></ion-icon>
+
+                <time datetime="2022-01-14">January 14, 2024</time>
+              </div>
+
+              <div class="comments">
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                <data value="114">114</data>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="blog-card">
+
+          <figure class="card-banner">
+
+            <a href="#">
+              <img src="./assets/images/tour2.jpg" alt="What cars are most vulnerable" loading="lazy" class="w-100">
+            </a>
+
+            <a href="#" class="btn card-badge">Somanathapura Temple</a>
+
+          </figure>
+
+          <div class="card-content">
+
+            <h3 class="h3 card-titles">
+              <a href="#">The Chennakesava Temple, also referred to as Chennakeshava Temple, Keshava Temple or Kesava Temple, is a Vaishnava Hindu
+              temple on the banks of River Kaveri at Somanathapura, Karnataka, India.</a>
+            </h3>
+
+            <div class="card-meta">
+
+              <div class="publish-date">
+                <ion-icon name="time-outline"></ion-icon>
+
+                <time datetime="2022-01-14">march 14, 2024</time>
+              </div>
+
+              <div class="comments">
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                <data value="114">114</data>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="blog-card">
+
+          <figure class="card-banner">
+
+            <a href="#">
+              <img src="./assets/images/tour3.jpg" alt="Statistics showed which average age" loading="lazy"
+                class="w-100">
+            </a>
+
+            <a href="#" class="btn card-badge">Kolli Hills</a>
+
+          </figure>
+
+          <div class="card-content">
+
+            <h3 class="h3 card-titles">
+              <a href="#">Kolli Hills or Kolli Malai (Tamil: கொல்லி மலை) is a small mountain range located in central Tamil Nadu in Namakkal
+              district of India. The mountains rise to 1300m in height and cover an area of approximately 280 km².</a>
+            </h3>
+
+            <div class="card-meta">
+
+              <div class="publish-date">
+                <ion-icon name="time-outline"></ion-icon>
+
+                <time datetime="2022-01-14">March 14, 2024</time>
+              </div>
+
+              <div class="comments">
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                <data value="114">114</data>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="blog-card">
+
+          <figure class="card-banner">
+
+            <a href="#">
+              <img src="./assets/images/tour4.jpg" alt="What´s required when renting a car?" loading="lazy"
+                class="w-100">
+            </a>
+
+            <a href="#" class="btn card-badge">Mettur Dam</a>
+
+          </figure>
+
+          <div class="card-content">
+
+            <h3 class="h3 card-titles">
+              <a href="#">The Mettur Dam is one of the largest dams in India and the largest in Tamilnadu located across the river Cauvery where
+              it enters the plains. Built in 1934. Maximum height and width of the Dam are 214 and 171
+              feet</a>
+            </h3>
+
+            <div class="card-meta">
+
+              <div class="publish-date">
+                <ion-icon name="time-outline"></ion-icon>
+
+                <time datetime="2022-01-14">April 14, 2024</time>
+              </div>
+
+              <div class="comments">
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                <data value="114">114</data>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="blog-card">
+
+          <figure class="card-banner">
+
+            <a href="#">
+              <img src="./assets/images/tour5.jpg" alt="New rules for handling our cars" loading="lazy" class="w-100">
+            </a>
+
+            <a href="#" class="btn card-badge">Munnar Hills</a>
+
+          </figure>
+
+          <div class="card-content">
+
+            <h3 class="h3 card-titles">
+              <a href="#">Munnar is a town and hill station located in the Idukki district of the southwestern Indian state of Kerala. Munnar is
+              situated at around 1,600 metres above mean sea level, in the Western Ghats mountain range.</a>
+            </h3>
+
+            <div class="card-meta">
+
+              <div class="publish-date">
+                <ion-icon name="time-outline"></ion-icon>
+
+                <time datetime="2022-01-14">Jully 14, 2024</time>
+              </div>
+
+              <div class="comments">
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                <data value="114">114</data>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
+</article>
+</main>
+      <section class="section type-car" id="type-car">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Car Types</h2>
+
+            <a href="#" class="type-car-link">
+              <span>View more</span>
+
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+          </div>
+
+          <ul class="type-car-list">
+
+            <li>
+              <div class="type-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-1.jpg" alt="Toyota RAV4 2021" loading="lazy" width="440" height="300"
+                    class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">MARUTI SUZUKI</a>
+                    </h3>
+
+                    <data class="year" value="2021">2021</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">4 People</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="flash-outline"></ion-icon>
+
+                      <span class="card-item-text">Diesel</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+
+                      <span class="card-item-text">8.2km / 1-litre</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Intra city,Out Station,Rental</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>₹8000</strong> /rental
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Rent now</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="type-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-2.jpg" alt="BMW 3 Series 2019" loading="lazy" width="440" height="300"
+                    class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">ALTO CAR</a>
+                    </h3>
+
+                    <data class="year" value="2019">2019</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">4 People</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="flash-outline"></ion-icon>
+
+                      <span class="card-item-text">Diesel</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+
+                      <span class="card-item-text">8.2km / 1-litre</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Intra city,Out Station,Rental</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>11000</strong> / month
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Rent now</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="type-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-3.jpg" alt="Volkswagen T-Cross 2020" loading="lazy" width="440"
+                    height="300" class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">TATA MINI</a>
+                    </h3>
+
+                    <data class="year" value="2020">2020</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">4 People</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="flash-outline"></ion-icon>
+
+                      <span class="card-item-text">Diesel</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+
+                      <span class="card-item-text">5.3km / 1-litre</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Intra city,Out Station,Rental</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>₹9000</strong> / month
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Rent now</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="type-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-4.jpg" alt="Cadillac Escalade 2020" loading="lazy" width="440"
+                    height="300" class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">TAWERA CAR</a>
+                    </h3>
+
+                    <data class="year" value="2020">2020</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">4 People</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="flash-outline"></ion-icon>
+
+                      <span class="card-item-text">Diesel</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+
+                      <span class="card-item-text">7.7km / 1-litre</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Out Station,Rental</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>₹1200</strong> / month
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Rent now</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="type-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-5.jpg" alt="BMW 4 Series GTI 2021" loading="lazy" width="440"
+                    height="300" class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">AUDI A6</a>
+                    </h3>
+
+                    <data class="year" value="2021">2021</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">4 People</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="flash-outline"></ion-icon>
+
+                      <span class="card-item-text">Diesel</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+
+                      <span class="card-item-text">7.6km / 1-litre</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Intra city,Rental</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>₹5300</strong> / month
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Rent now</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="type-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-6.jpg" alt="BMW 4 Series 2019" loading="lazy" width="440" height="300"
+                    class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">BMW 4 SERIES</a>
+                    </h3>
+
+                    <data class="year" value="2019">2019</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">4 People</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="flash-outline"></ion-icon>
+
+                      <span class="card-item-text">Diesel</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+
+                      <span class="card-item-text">7.2km / 1-litre</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Intra city,Rental</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>₹8000</strong> / month
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Rent now</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+      <section class="section get-start">
+        <div class="container">
+
+          <h2 class="h2 section-title">Trip Types</h2>
+
+          <ul class="get-start-list">
+
+            <li>
+              <div class="get-start-card">
+
+                <div class="card-icon icon-1">
+                  <ion-icon name="car-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title"><span>Intra City</span></h3>
+<!-- 
+                <p class="card-text">
+                  We provides you with a comfortable intra-city rides for 2 to 8 people through Maruti Suzuki,Alto car,Tata Mini,Tawera car,Audi A6,BMW Series starting from Rs. 10/_ per km.
+                  You can also schedule your booking during rush days/festival days without any additional charges. For your private journey we will also provide a Rental cars. Make your payments
+                  cashless through REDWALLET or PAYTM.
+                </p> -->
+                <p class="card-text">
+                  Car Types- Suzuki,Alto car,Tata Mini,Audi A6,BMW Series
+                  <br>
+                  <br>
+                  Seaters- 2 to 8 Seaters
+                  <br>
+                  <br>
+                  Charges- Start from Rs. 10/_ per km.
+                  <br>
+                  <br>
+                  Payments- Handcash or cashless through Gpay or PAYTM.
+                </p>
+
+                <a href="#" class="card-link">Book Now</a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="get-start-card">
+
+                <div class="card-icon icon-2">
+                  <ion-icon name="car-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title"><span>Outstation</span></h3>
+
+                <!-- <p class="card-text">
+                  We operates 3 seaters, 4 seater, 7seater &amp; 14 seater vehicles for your economical and luxurious outstation rides with
+                  your family, friends and relatives. Red Taxi Provides a wide range of cab models &amp; sizes to choose as per your
+                  convenient. Make your payments cashless through REDWALLET or PAYTM.
+                </p> -->
+                <p class="card-text">
+                  Car Types- Suzuki,Alto car,Tata Mini,Tawera car.
+                  <br>
+                  <br>
+                  Seaters- 4 to 14Seaters
+                  <br>
+                  <br>
+                  Charges- Start from Rs. 15/_ per km.
+                  <br>
+                  <br>
+                  Payments- Handcash or cashless through Gpay or PAYTM.
+                </p>
+
+                <a href="#" class="card-link">Book Now</a>
+                
+
+              </div>
+            </li>
+
+            <li>
+              <div class="get-start-card">
+
+                <div class="card-icon icon-3">
+                  <ion-icon name="car-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title"><span>Rental</span></h3>
+
+                <!-- <p class="card-text">
+                  We convenience you to hire a cab hourly basis so that you are not to worry about the number of stops and waiting time. you
+                  can hire from one hour to 12 hours as per your convenient.Make your payments cashless through REDWALLET or PAYTM.
+                </p> -->
+                <p class="card-text">
+                  Car Types- Suzuki,Tawera car,Audi A6,BMW Series
+                  <br>
+                  <br>
+                  Seaters- 2 to 10 Seaters
+                  <br>
+                  <br>
+                  Rental- Start from Rs. 8000/_ per Trip.
+                  <br>
+                  <br>
+                  Payments- Handcash or cashless through Gpay or PAYTM.
+                </p>
+
+                <a href="#" class="card-link">Book Now</a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="get-start-card">
+
+                <div class="card-icon icon-4">
+                  <ion-icon name="car-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title"><span>Corporate</span></h3>
+
+                <!-- <p class="card-text">
+                  We accelerates a better way to travel for Corporates. Ride in comfort with ample space using our 24 hours Corporate Cabs.
+                  Your end-to-end mobility solution to employee transport with 100% Tech-based solution | Largest Networks of Cabs | 100%
+                  Policy Compliant | Highest safety Measures
+                </p> -->
+                <p class="card-text">
+                  Car Types- Suzuki,Alto car,Tata Mini,Audi A6,BMW Series
+                  <br>
+                  <br>
+                  Seaters- 2 to 4 Seaters
+                  <br>
+                  <br>
+                  Charges- Charges based on shift timing and trips per day
+                  <br>
+                  <br>
+                  Payments- Handcash or cashless through Gpay or PAYTM.
+                </p>
+
+                <a href="#" class="card-link">Book Now</a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3 class="h3 card-title">
+            <a href="#"><span>CallTaxi</span></a>
+          </h3>
+          <p class="footer-text">
+            Search for cheap rental cars in Tamilnadu. With a diverse fleet of 10,000+ vehicles, Waydex offers its
+            consumers an attractive and fun selection.
+          </p>
+        </div>
+  
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title"><span>Quick Link</span></p>
+          </li>
+          <li>
+            <a href="index.html" class="footer-link">Home</a>
+          </li>
+          <li>
+            <a href="Partners.html" class="footer-link">Partners</a>
+          </li>
+          <li>
+            <a href="Booking.html" class="footer-link">Booking</a>
+          </li>
+          <li>
+            <a href="Support.html" class="footer-link">Support</a>
+          </li>
+        </ul>
+  
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title"><span>Contact</span></p>
+          </li>
+          <li>
+            <a href="tel:1234567890" class="footer-link">
+              <i class="fas fa-phone"></i> 1234567890
+            </a>
+          </li>
+          <li>
+            <a href="mailto:info@calltaxi.co.in" class="footer-link">
+              <i class="fas fa-envelope"></i> info@calltaxi.co.in
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <i class="fas fa-map-marker-alt"></i> Tamilnadu
+            </a>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="footer-bottom">
+        <ul class="social-list">
+          <li><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+  
+        <p class="copyright">
+          &copy; 2024 <a href="#">CallTaxi</a>. All Rights Reserved
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="./assets/js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+  
+  </html>
